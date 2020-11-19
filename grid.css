@@ -1,0 +1,59 @@
+    aside {
+      grid-area: aside;
+      font-size: 20px;
+      line-height: 35px;
+    }
+
+    #about {
+      grid-area: about;
+    }
+
+    #laundry {
+      grid-area: laundry;
+    }
+
+    #cafe {
+      grid-area: cafe;
+    }
+
+    #hours-staff {
+      grid-area: hours-staff;
+    }
+
+    main {
+     display: grid;
+     grid-template-areas: 
+      'aside'
+      'about'
+      'laundry'
+      'cafe'
+      'hours-staff';
+      grid-gap: 10px;
+      padding: 10px;
+}
+
+@media (min-width: 768px) {
+    main {
+      grid-template-areas: 
+      'aside about'
+      'aside laundry'
+      'aside cafe'
+      'aside hours-staff';
+     }
+}
+
+@media (min-width: 992px) {
+    main {
+      grid-template-areas: 
+      'aside about laundry'
+      'aside cafe hours-staff';
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+      grid-template-areas: 
+      'aside about laundry cafe'
+      'aside hours-staff hours-staff hours-staff';
+        }
+}

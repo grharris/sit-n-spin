@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+  <title>Contact :: Sit & Spin Laundry Cafe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+</head>
+
+<body>
+
+
+  <header>
+    <h1 class="animate__animated animate__shakeX"> Sit & Spin Laundry Cafe</h1>
+  </header>
+  
+   <nav>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="about.html">About</a>
+        <ul>
+          <li><a href="contact.html">Location / Contact</a></li>
+          <li><a href="bios.html">Staff Bios</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="laundry.html">Laundry</a>
+        <ul>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+        </li>
+      <li>
+        <a href="cafe.html">Cafe</a>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="entertainment.html">Entertainment</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+<main class="centered">
+
+  <h2>Contact Us</h2>
+
+  <p>Please fill out this form and send us some mail!</p>
+
+<form 
+  action="https://formspree.io/xnqgnnke"
+  method="POST"
+>
+ <input type="hidden" name="_subject" value="Sit & Spin Form Submission" />
+
+  <!-- your other form fields go here -->
+  <fieldset>
+    <legend><h3>What do you like best about the Sit & Spin Laundry Cafe?</h3></legend>
+    <select id="best" name="like-best" size="6" multiple>
+      <option value="laundry">Laundry machines</option>
+      <option value="affordability">Affordability</option>
+      <option value="snacks">Yummy snacks</option>
+      <option value="coffee">Delicious coffee</option>
+      <option value="staff">Friendly staff</option>
+      <option value="hours">Hours - 24/7!</option>
+    </select>
+    <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+  </fieldset>
+
+  <fieldset>
+    <legend><h3>How did you hear about us?</h3></legend>
+  
+      <input type="checkbox" id="friend" name="hear-about-us" value="friend">
+      <label for="friend">Friend</label><br>
+
+      <input type="checkbox" id="facebook" name="hear-about-us" value="facebook">
+      <label for="facebook">Facebook</label><br>
+
+      <input type="checkbox" id="instagram" name="hear-about-us" value="instagram">
+      <label for="instagram">Instagram</label><br>
+
+      <input type="checkbox" id="google" name="hear-about-us" value="google">
+      <label for="google">Google</label><br>
+
+      <input type="checkbox" id="billboard" name="hear-about-us" value="billboard">
+      <label for="billboard">Billboard</label><br>
+
+      <input type="checkbox" id="flyer" name="hear-about-us" value="flyer">
+      <label for="flyer">Flyer</label><br>
+  </fieldset>
+
+  <fieldset>
+    <legend><h3>Would you like to subscribe to our fancy laundry cafe e-mail newsletter?</h3></legend>
+      <input type="radio" id="yes-newsletter" name="newsletter" value="yes">
+      <label for="yes-newsletter">Yes, please!</label><br>
+
+      <input type="radio" id="no-newsletter" name="newsletter" value="no">
+      <label for="no-newsletter">No thank you.</label><br>
+  </fieldset>
+<br>
+
+<fieldset>
+  <legend><h3>Contact Info and Comments</h3></legend>
+    <label for="e-mail" class="block">Please enter your e-mail address: * </label>
+    <input type="email" id="e-mail" name="_replyto" required>
+    <br> <br>
+
+    <label for="name" class="block">Please give us your name: * </label>
+    <input type="text" id="name" name="name" required>
+    <br> <br>
+
+    <label for="message" class="block">Any other comments for us?</label>
+    <textarea name="message" id="message" rows="10" cols="30"></textarea>
+</fieldset>
+  <br>
+   <div class="centered-btn">
+    <button  id="submit-btn" type="submit">SEND e-mail to Sit & Spin!</button>
+      </div>
+  <br>
+  <div class="centered-btn">
+     <button id="reset-btn" type="reset">CLEAR all data from form</button>
+  </div>
+
+</form>
+
+</main>
+<footer>
+    <h2>Contact Us!</h2>
+    <p>e-mail to sitandspin (at) gmail (dot) com OR call/text (206) 555-2233. We'd love to hear from you!</p>
+  </footer>
+
+
+</body>
+
+</html>

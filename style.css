@@ -1,0 +1,193 @@
+    @font-face {
+        font-family: "Mostra Nuova AltA W05 Light";
+        src: url("fonts/0e4ff5f8-b604-4567-8433-0a04da5ace18.woff2") format("woff2"), url("fonts/ccf9954d-93f2-489d-9888-13dfc8e432bb.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Mostra Nuova AltA W05 Bold";
+        src: url("fonts/3e3ea35c-6adf-4e01-8b3a-cd0f705f9934.woff2") format("woff2"), url("fonts/a3f5ccad-dc66-4045-b235-01815198bdab.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Mostra Nuova AltA W05 Thin";
+        src: url("fonts/4665d83b-19a7-4738-b1d8-e60415c4847d.woff2") format("woff2"), url("fonts/dd1a5b36-2498-406d-904d-0e035209314c.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Mostra Nuova AltA W05 Regular";
+        src: url("fonts/1ba21327-77fb-432d-874b-b0f51f5fb31f.woff2") format("woff2"), url("fonts/a723934e-1756-452e-b585-dac764a9da99.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Mostra Nuova AltA W05 Heavy";
+        src: url("fonts/04f4a848-6fad-4f8d-84f4-bd95a8ffbaf3.woff2") format("woff2"), url("fonts/404b28ad-3294-4446-8094-809b2e2b1a82.woff") format("woff");
+    }
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #d8beb4; /* Pink Shadow */
+  font-family: "Open Sans", sans-serif;
+  color: #6b563a; /* Coconut Husk */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+  clear: both;
+}
+
+h1 {
+  font-family: "Mostra Nuova AltA W05 Heavy";
+  font-size: 72px;
+  color: #6b563a; /* Coconut Husk */
+}
+
+h2 {
+  font-family: "Mostra Nuova AltA W05 Bold";
+  color: #85854b; /* Rural Green */
+  font-size: 26px;
+}
+
+table {
+  border: 1px #85854b solid; /* Rural Green */
+  border-collapse: collapse;
+  display: inline-table;
+}
+
+figure {
+  clear: both;
+}
+
+caption {
+  font-size: 26px;
+  font-family: "Mostra Nuova AltA W05 Bold";
+}
+
+th {
+  text-align: left;
+  background-color: #6b563a; /* Coconut Husk */
+  color: #fff;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+
+.striped tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.striped tr:nth-child(even) {
+  background-color: #85854b; /* Rural Green */
+  color: #fff;
+}
+
+.centered {
+  margin: 0 auto; 
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  border: 5px double #a5966f; /* Burlap */
+}
+
+form {
+  text-align: left;
+}
+
+button, input, select, textarea {
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+}
+
+.centered-btn {
+  text-align: center;
+}
+
+.block {
+  display: block;
+}
+
+button {
+  border-radius: 12px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #85854b; /* Rural Green */
+  border: none;  
+}
+
+button:hover {
+  background-color: #6b563a; /* Coconut Husk */
+}
+
+
+
+nav {    
+  font-family: "Mostra Nuova AltA W05 Light";
+  background-color: #6b563a; /* Coconut Husk */
+  font-size: 22px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav a {
+  display: block; 
+  background-color: #6b563a; /* Coconut Husk */
+  color: #fff; 
+  text-decoration: none;
+  padding: 0.8em 1.8em;
+  position: relative;
+}
+.nav {  
+  vertical-align: top; 
+  display: inline-block;
+}
+.nav li {
+  position: relative;
+}
+.nav > li { 
+  float: left; 
+  margin-right: 1px; 
+} 
+.nav > li > a { 
+  margin-bottom: 1px;
+}
+.nav li:hover > a { 
+  color: #c89d7c; /* Windswept Canyon */
+  font-family: "Mostra Nuova AltA W05 Regular";
+}
+.nav ul {
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+  left: -99999em;
+}
+.nav > li:hover > ul {
+  left: auto;
+  min-width: 100%;
+}
+.nav > li li:hover > ul { 
+  left: 100%;
+  margin-left: 1px;
+  top: -1px;
+}
